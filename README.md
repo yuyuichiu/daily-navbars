@@ -1,2 +1,2 @@
-# miniproject-navbars
-A mini project series of navigation bars, hamburgers, responsive webpage and my progress towards learning them.
+# Daily-navbars
+A mini project to showcase my learning progress towards types of navigation bars, hamburgers, and responsive webpages.
