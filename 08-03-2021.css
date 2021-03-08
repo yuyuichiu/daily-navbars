@@ -1,0 +1,98 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+/* Navigation Bar */
+.top-nav{
+    /*To make the bar float on top*/
+    position: fixed;
+    z-index: 1000;
+    /*Height and relative width*/
+    height: 50px;
+    width: 100%;
+    /*Solution to shrinked screen size*/
+    overflow: hidden;
+    /*Color of the bar*/
+    background-color:rgb(205, 255, 243);
+    /*Remove List dots*/
+    list-style-type: none;
+}
+
+.top-nav li{
+    /*Make item flow from left to right instead of default*/
+    float: left;
+}
+
+.top-nav a{
+    /*Clear default link text decorations*/
+    text-decoration: none;
+    /*Allow link to be clickable as boxes*/
+    display: block;
+    /*Customized settings*/
+    color: #000;
+    padding: 16px 16px;
+    font-size: 20px;
+}
+
+    /*To change color when user hover mouse on items*/
+.top-nav a:hover{
+    
+    background-color: rgb(236, 255, 251);
+}
+    /*Assign a different color to */
+.active{
+    background-color: rgb(154, 255, 231);;
+}
+
+/*Invisible Block for navigation bar height*/
+.invis{
+    height: 50px;
+    width: 100%;
+}
+
+/*Main wordings content*/
+h1{
+    margin: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 5px;
+}
+
+.mini{
+    color: #aaa;
+    font-size: 8px;
+}
+
+/*A simple border to hover my text*/
+.textborder{
+    border: 1px black solid;
+    width: 95%;
+    position: relative;
+    left: 2.25%;
+}
+
+/*Search Icon in nav bar*/
+.search-icon{
+    /*Adjust png size*/
+    height: 40px;
+    width: 40px;
+
+    /*Make it right*/
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+
+#search-icon-link{
+    margin: 0px;
+    padding: 0px;
+}
