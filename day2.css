@@ -33,11 +33,16 @@ p,h1{
 
 .dropdown-menu{
     /*Absolute display mode to not occupy space for other elements*/
-    display: absolute;
+    position: absolute;
+    /*To hide while unhovered*/
+    display: none;
+    /*Set z-index to slightly higher to stay on top*/
+    z-index: 2;
     /*Size and Appearances*/
     background-color: #93cbff;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     min-width: 200px;
+    opacity: 95%;
 }
 
 .dropdown-menu a{
