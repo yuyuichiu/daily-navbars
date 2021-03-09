@@ -1,0 +1,65 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p,h1{
+    margin: 5px auto;
+    position: relative;
+    left: 5px;
+}
+
+/*The Dropdown Button*/
+.dropdownBtn {
+    /*Button Appearance*/
+    color: white;
+    background-color: deepskyblue;
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+    width: 150px;
+    /*Turn cursor into a different type of appearance when hovered*/
+    cursor: pointer;
+}
+
+.dropdown{
+    /*Position Mode to allow of the whole list*/
+    position: relative;
+    left: 10px;
+    /*To display as sizable inline-level elements*/
+    display: inline-block;
+}
+
+.dropdown-menu{
+    /*Absolute display mode to not occupy space for other elements*/
+    display: absolute;
+    /*Size and Appearances*/
+    background-color: #93cbff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    min-width: 200px;
+}
+
+.dropdown-menu a{
+    /*Link display as block to act like button*/
+    display: block;
+    /*Link Appearance*/
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 16px;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+/*Image*/
+.fail{
+    /*Center Img*/
+    display: block;
+    position: relative;
+    left: 20px;
+    width: 300px;
+    border: 3px black solid;
+}
