@@ -1,21 +1,28 @@
 *{
     margin: 0px;
     padding: 0px;
-    background-color: #eee;
 }
 
-h1, p{
+@font-face{
+    font-family: "Arvo";
+    src: url(font/Arvo/Arvo-Regular.ttf);
+}
+
+h1, h2, p{
     color: black;
     margin: 5px;;
+    z-index: 5;
+    background-color: none;
 }
 
 /*Top Navigation Bar*/
 .top-nav{ /*The bar*/
-    display: absolute;
     position: fixed;
     overflow: hidden;
     background-color: rgb(180, 180, 180);
     width: 100%;
+    opacity: 90%;
+    z-index: 10;
 }
 
 .top-nav li{ /*Element Align*/
@@ -26,17 +33,48 @@ h1, p{
 .top-nav a{ /*Element Content*/
     display: block;
     text-decoration: none;
+    font-weight: 500;
     color: white;
     background-color: rgb(180, 180, 180);
-    padding: 10px;
+    padding: 30px 20px;
+    font-size: 25px;
 }
 
-.gap{
-    display: block;
-    padding: 10px;
+/*Dropdown List for Nav Bar Item*/
+.nav-dropdown{
+    position: relative;
+    display: inline-block;
 }
+
 
 /*Top Nav - Interactive Functions*/
-.top-nav li:hover{
-    background-color: black;
+.top-nav li a:hover{
+    background-color: rgb(175, 175, 175);
 }
+
+/*Setting up the intro big picture*/
+.intro-pic{
+    width: 100%;
+    height: auto;
+}
+
+/*Text box that wrap into the image*/
+.container{
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.text-block {
+    position: absolute;
+    bottom: 60%;
+    right: 20%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px 45px;
+  }
+
+  .text-block h2,p{
+      font-size: 1.5em;
+      font-family: "Arvo";
+  }
