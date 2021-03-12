@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*The daily navigation bar*/
+.top-nav{
+    /*Functional*/
+    position: fixed;
+    width: 100%;
+    /*Style Adjustment*/
+    background-color: rgb(131, 210, 255);
+    box-shadow: 0px 2px 10px #666;
+    opacity: 80%;
+}
+
+.top-nav li{
+    list-style-type: none;
+    float: left;
+}
+
+.top-nav li a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 20px 15px;
+}
+
+.top-nav li a:hover{
+    background-color: rgb(41, 202, 202);
+    color: rgb(233, 252, 255)
+}
+
+/*Picture*/
+.sea-pic{
+    width: 100%;
+    height: auto;
+}
