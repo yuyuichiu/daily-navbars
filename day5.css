@@ -10,8 +10,8 @@
     position: fixed;
     width: 100%;
     /*Style Adjustment*/
-    background-color: rgb(131, 210, 255);
-    box-shadow: 0px 2px 10px #666;
+    background-color: rgb(87, 193, 255);
+    box-shadow: 0px 2px 10px rgba(0,0,0,.2);
     opacity: 80%;
 }
 
@@ -20,7 +20,7 @@
     float: left;
 }
 
-.top-nav li a{
+.top-nav a{
     display: inline-block;
     text-decoration: none;
     color: black;
@@ -30,6 +30,33 @@
 .top-nav li a:hover{
     background-color: rgb(41, 202, 202);
     color: rgb(233, 252, 255)
+}
+
+
+/*Dropdown List within nav-bar*/
+li.dropdown{
+    display: inline-block;
+}
+
+.dropdown-content{
+    /*Absolute position to stop item stretching nav bar*/
+    position: absolute;
+    /*Display none while unhovered*/
+    display: none;
+
+    /*Styling*/
+    background-color: rgb(131, 210, 255);
+    box-shadow: 0px 2px 10px rgb(0, 0, 0, .2);
+}
+
+.dropdown-content a{
+    display: block;
+    min-width: 120px;
+}
+
+  /*Display dropdown menu while hovered*/
+.dropdown:hover .dropdown-content{
+    display: block;
 }
 
 /*Picture*/
