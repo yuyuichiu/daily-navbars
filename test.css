@@ -1,0 +1,47 @@
+*{
+    margin: 5px 0px;
+    padding: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+div{
+    margin: 5px;
+    background-color: blue;
+    width: 200px;
+    height: auto;
+    color: white;
+}
+
+p{
+    display: block;
+    height: 40px;
+    width: 40px;
+    border: 2px solid rgb(255, 12, 4);
+    box-sizing:border-box;
+}
+
+section{
+    clear: left;
+}
+
+#p1{
+    background-color: blanchedalmond;
+    float: left;
+}
+
+#p2{
+    display: none;
+    background-color:blueviolet;
+    
+}
+
+#p3{
+    display: none;
+    background-color:cornflowerblue;
+}
+
+#p4{
+    display: none;
+    background-color:darkgoldenrod;
+    float: right;
+}

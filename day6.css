@@ -4,7 +4,12 @@
     font-family: 'Titillium Web', 'monospace', sans-serif;
 }
 
+p{
+    margin: 5px;
+}
+
 h1{
+    margin: 5px;
     font-weight: 600;
 }
 
@@ -67,4 +72,34 @@ li.dropdown{
     width: 100%;
     height: auto;
     max-height: 800px;
+}
+
+/*Textbox inside grape pciture*/
+div.container{
+    position: relative;
+}
+
+div.textbox{
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    /*Styling*/
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: rgba(167, 255, 96, 0.842);
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.35);
+}
+
+.textbox h1,.textbox p{
+    text-align: center;
+}
+
+/*Double Column with float*/
+.txt-container p{
+    width: 50%;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 10px;
+    float: left;
 }
