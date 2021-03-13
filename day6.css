@@ -1,0 +1,70 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Titillium Web', 'monospace', sans-serif;
+}
+
+h1{
+    font-weight: 600;
+}
+
+/*Nav Bar*/
+.top-nav{
+    width: 100%;
+    background-color: rgba(219, 255, 60, 0.8);
+    position: fixed;
+    z-index: 500;
+    /*overflow: hidden;*/
+    opacity: 0.9;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
+}
+
+.top-nav li{
+    float: left;
+    list-style-type: none;
+}
+
+.top-nav a{
+    text-decoration: none;
+    color: rgb(111, 47, 214);
+    display: inline-block;
+    padding: 16px;
+    background-color: rgba(215, 255, 107, 0.8);
+}
+
+.top-nav a:hover{
+    background-color: rgba(193, 255, 22, 0.8);
+}
+
+.top-nav a:active{
+    background-color: rgba(170, 231, 0, 0.8);
+}
+
+/*Dropdown within nav bar*/
+li.dropdown{
+    display: inline-block;
+}
+
+.dropdown-content{
+    position: absolute;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a{
+    display: none;
+    background-color: rgb(227, 255, 151);
+    padding: 20px;
+    min-width: 125px;
+}
+
+/*Show Dropdown on hover*/
+.dropdown:hover .dropdown-content a{
+    display: block;
+}
+
+/*Grape Picture*/
+.grapes{
+    width: 100%;
+    height: auto;
+    max-height: 800px;
+}

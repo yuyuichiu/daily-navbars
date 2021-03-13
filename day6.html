@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="day6.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;1,600&display=swap" rel="stylesheet">
+    <title>Day 6</title>
+</head>
+<body>
+    <!--Horizontal Navigation Bar-->
+    <nav class="top-nav">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li class="dropdown">
+                <a href="javascript:void(0)">Grapes</a>
+                <div class="dropdown-content">
+                    <a href="temp_page.html">About Grapes</a>
+                    <a href="temp_page.html">Types of Grapes</a>
+                </div>
+            </li>
+            <li>
+                <a target="_blank" href="https://en.wikipedia.org/wiki/Grape">Wiki</a>
+            </li>
+            <li>
+                <a href="#main">Main</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <main>
+        <img class="grapes" src="pic/grapes.jpg" />
+        <!--"&lt;" for "<" (lower than)
+            "&gt;" for ">" (greater than)
+            "&amp; for "&" 
+            "&copy;" for "Copyright sign"
+            "&nbsp;" for "non-breaking space"-->
+        <!--To avoid these signs being threated as tags.-->
+        <h1 id="main">&lt;Day 6&gt;</h1>
+        <p>Nav Bar &amp; Dropdown&copy;</p>
+        <span><div>Hello</span></div>
+    </main>
+</body>
+</html>
