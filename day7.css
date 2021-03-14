@@ -1,0 +1,62 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*****Navigation Bar*****/
+.top-nav ul{
+    position: fixed;
+    width: 100%;
+    background-color: rgba(154, 223, 255, 0.75);
+    opacity: 0.8;
+    box-shadow: 0px 2px 10px rgba(117, 86, 255, 0.3);
+    z-index: 1000;
+}
+
+.top-nav li{
+    float: left;
+    list-style-type: none;
+}
+
+.top-nav a{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(10, 64, 145);
+    padding: 30px 15px;
+}
+
+.top-nav a:hover{
+    background-color: rgba(93, 177, 255, 0.85);
+}
+
+.top-nav a:active{
+    background-color: rgba(0, 102, 255, 0.85);
+}
+
+.dropdown{
+    display: inline-block;
+}
+
+.dropdown-content{
+    position: absolute;
+    box-shadow: 0px 3px 5px rgba(79, 91, 255, 0.3);
+}
+
+.dropdown-content a{
+    display: none;
+    background-color: rgba(176, 230, 255, 0.75);
+    min-width: 175px;
+}
+
+.dropdown:hover .dropdown-content a{
+    display: block;
+}
+
+/*****Content Styling*****/
+.sky{
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-height: 750px;
+}
