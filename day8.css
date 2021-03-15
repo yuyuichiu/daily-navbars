@@ -1,0 +1,86 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Titillium", "Georgia", sans-serif;
+}
+
+@font-face{
+    font-family: "Titillium";
+    src: url(font/Titillium_Web/TitilliumWeb-Regular.ttf);
+}
+
+/*******Navigation Bar*******/
+.top-nav ul{
+    width: 100%;
+    position: fixed;
+    background-color: rgba(203, 126, 255, 0.7);
+    box-shadow: 0px 2px 10px rgba(71, 64, 0, 0.2);
+    z-index: 500;
+}
+
+.top-nav li{
+    display: inline-block;
+}
+
+.top-nav a{
+    display: block;
+    text-decoration: none;
+    color: rgb(162, 0, 226);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 30px 15px;
+}
+
+.top-nav a:hover{
+    background-color: rgba(183, 75, 255, 0.7);
+    color: rgb(140, 0, 196);
+}
+
+.top-nav a:active{
+    background-color: rgba(166, 31, 255, 0.7);
+    color: rgb(117, 0, 163);
+}
+
+.dropdown{
+    display: inline-block;
+}
+
+.dropdown-item{
+    position: absolute;
+    box-shadow: 0px 15px 10px rgba(71, 64, 0, 0.2);
+}
+
+.dropdown-item a{
+    display: none;
+    min-width: 150px;
+    background-color: rgba(203, 126, 255, 0.7);
+}
+
+.dropdown:hover .dropdown-item a{
+    display: block;
+}
+
+/***********/
+.img-container{
+    position: relative;
+}
+
+.img-box{
+    position: absolute;
+    background-color:rgb(224, 147, 255);
+    padding: 30px 60px;
+    border-radius: 5px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img-box p, .img-box h1{
+    text-align: center;
+}
+
+.purple{
+    height: auto;
+    width: 100%;
+    max-height: 800px;
+}
