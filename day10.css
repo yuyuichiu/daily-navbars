@@ -1,0 +1,37 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Titillium";
+}
+
+@font-face{
+    font-family: "Titillium";
+    src:url("font/Titillium_Web/TitilliumWeb-Regular.ttf")
+}
+
+/*****************Navigation Bar********************/
+.top-nav ul{
+    position: fixed;
+    width: 100%;
+    background-image: linear-gradient(rgba(253, 255, 134, 0.9),rgba(255, 229, 80, 0.9));
+    z-index: 500;
+    box-shadow: 0px 5px 10px rgba(228, 231, 24, 0.2);
+}
+
+.top-nav li{
+    list-style-type: none;
+    float: left;
+}
+
+.top-nav a{
+    display: block;
+    padding: 20px 10px;
+    text-decoration: none;
+    color: rgb(144, 146, 0);
+    transition: all 0.4s ease-in-out;
+}
+
+.top-nav a:hover{
+    background-image: linear-gradient(rgba(252, 255, 104, 0.9),rgba(255, 225, 55, 0.9));
+}

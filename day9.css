@@ -57,11 +57,12 @@ h2{
 }
 
 .picture img{
-    position: relative;
-    width: 100%;
     border-radius: 10px;
     opacity: 0.7;
     transition: all 0.3s ease-in-out;
+
+    width: 100%;
+    height: auto;
 }
 
 .picture img:hover{
