@@ -35,3 +35,32 @@
 .top-nav a:hover{
     background-image: linear-gradient(rgba(252, 255, 104, 0.9),rgba(255, 225, 55, 0.9));
 }
+
+/**************Image and Text Box*******************/
+.img-container{
+    position: relative;
+}
+
+.img-txt-box{
+    position: absolute;
+    background-color: rgba(255, 235, 205, 0.9);
+    box-shadow: 2px 2px 10px rgba(107, 48, 0, 0.5);
+    padding: 15px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img-txt-box h1, .img-txt-box p, #output{
+    text-align: center;
+}
+
+button{
+    background-image: linear-gradient(rgba(253, 255, 134, 0.9),rgba(255, 229, 80, 0.9));
+    border: 1px solid rgba(117, 117, 0, 0.466);
+    padding: 3px;
+}
+
+#rightB{
+    float: right;
+}

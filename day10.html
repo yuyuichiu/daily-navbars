@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="day10.css" />
+    <script src="js/day10.js"></script>
     <title>Day 10</title>
 </head>
 <body>
@@ -25,9 +26,23 @@
         </ul>
     </nav>
     <main>
-        <img src="pic/fields.jpg" width=100% height=auto>
+        <div class="img-container">
+            <!--Image-->
+            <img src="pic/fields.jpg" width=100% height=auto>
+            <!--Text Box on Image-->
+            <div class="img-txt-box">
+                <h1>Day 10</h1>
+                <p>Gradient & Playing with javascript</p>
+                <p>Try these button!</p>
+                <div id="output"></div>
+                <button onclick="delayManager.Start()">Start Counting</button>
+                <button id="rightB" onclick="delayManager.End()">Stop Counting</button>
+            </div>
+        </div>
+        
         <p>CSS Gradient --- background-image: linear-gradient(direction, color1, color2);</p>
-        <p>To do: dropdown revise, vertical nav, prepare javascript</p>
+        <p>Javascript Delay: Using delay manager to manage the behavior of scheduled delays of executions</p>
+        <p></p>
     </main>
 </body>
 </html>
