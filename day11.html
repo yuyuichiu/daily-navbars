@@ -13,22 +13,58 @@
     <nav class="top-nav">
         <ul>
             <li>
-                <a href="javascript: void(0)">Day 11</a>
+                <a href="javascript: void(0)" class="active">Day 11</a>
             </li>
             <li>
                 <a href="javascript: void(0)">Home</a>
             </li>
-            <li>
+            <li class="nav-dropdown">
                 <a href="javascript: void(0)">Content</a>
+                <div class="nav-dropdown-item">
+                    <a href="javascript: void(0)">Apple</a>
+                    <a href="javascript: void(0)">Banana</a>
+                    <a href="javascript: void(0)">Grapes</a>
+                </div>
             </li>
+            <li class="nav-dropdown">
+                <a href="javascript: void(0)">Hover Me!</a>
+                <div class="nav-dropdown-item">
+                    <a href="javascript: void(0)">You did it!!</a>
+                    <a href="javascript: void(0)">Good job human.</a>
+                    <a href="javascript: void(0)">Very good.</a>
+                </div>
+            </li>
+            <li class="nav-dropdown">
+                <a href="javascript: void(0)">No, me.</a>
+                <div class="nav-dropdown-item">
+                    <a href="javascript: void(0)">I knew you would come.</a>
+                    <a href="javascript: void(0)">Why?</a>
+                    <a href="javascript: void(0)">Because I now have transitions</a>
+                </div>
+            </li>
+            <li class="nav-dropdown">
+                <a href="javascript: void(0)">Path of exile quotes</a>
+                <div class="nav-dropdown-item">
+                    <a href="javascript: void(0)">This world is just an illusion, exile...</a>
+                    <a href="javascript: void(0)">Why are you so in love with death?</a>
+                    <a href="javascript: void(0)">May a new dawn arise!</a>
+                </div>
+            </li>
+
         </ul>
     </nav>
     <div class="container">
         <img src="pic/blueviolet2.jpg" width=100% height=auto/>
         <div class="img-txt-box">
             <h1>Day 11</h1>
-            <p>to-do: dropdown revise, </p>
+            <p>Transition effect with dropdown list</p>
+            <p>Hover some items!</p>
         </div>
     </div>
+    <main>
+        <h1>Transition Effect with Dropdown box.</h1>
+        <p>It seems easy for me at first as I thought the display can be easily animated. Turns out I cannot animate properties while "display: none/ block" is adapted to manage the display. Therefore, I have to use an alternative way.</p>
+        <p>The way that I use is to use control the hover event with visibility instead of display. It was not preferable to use visibility normally as it will make the hidden items occupy spaces, but it can be solved by setting the height to 0 and overflow: hidden while the item is not shown. This way, I can add transition effect to properties.</p>
+    </main>
 </body>
 </html>

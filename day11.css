@@ -7,7 +7,7 @@
 
 @font-face{
     src: url("font/Titillium_Web/TitilliumWeb-Regular.ttf");
-    font-family: "Titillium"
+    font-family: "Titillium";
 }
 
 /*******Navigation Bar*******/
@@ -36,6 +36,49 @@
     background-image: linear-gradient(rgba(151, 107, 255, 0.8), rgba(132, 140, 255, 0.8));
 }
 
+.active{
+    background-image: linear-gradient(rgba(151, 107, 255, 0.8), rgba(132, 140, 255, 0.8));
+}
+
+/*Dropdown List in nav bar*/
+.nav-dropdown{
+    display: inline-block;
+}
+
+.nav-dropdown-item{
+    position: absolute;
+}
+
+.nav-dropdown-item a{
+    /*Pair of visibility + height: 0 to replace display for animation purpose*/
+    visibility: hidden;
+    height: 0px;
+    overflow: hidden; /*Avoid occupying space*/
+
+    background-color: rgba(132, 140, 255, 0.8);
+    min-width: 150px;
+    opacity: 0;
+
+    transition: visibility 0s, opacity 0.3s linear, background-color 0.3s ease-in-out;
+}
+
+.nav-dropdown-item a:hover{
+    background-color: rgba(140, 91, 255, 0.8);
+    background-image: none;
+}
+
+.nav-dropdown:hover .nav-dropdown-item{
+    box-shadow: 0px 5px 10px rgba(34, 0, 70, 0.3);
+    /*shadow transition intentionally put here to disable fade out animation*/
+    transition: box-shadow 0.3s linear;
+}
+
+.nav-dropdown:hover .nav-dropdown-item a{
+    visibility: visible;
+    height: auto;
+    opacity: 1;
+}
+
 /*******Image Property & Text Box*******/
 .container img{
     position: relative;
@@ -51,4 +94,11 @@
     color: rgb(107, 0, 98);
     padding: 30px 20px;
     border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.img-txt-box:hover{
+    padding: 45px 30px;
+    font-size: 18px;
+    top: 25%;
 }
