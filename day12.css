@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Titillium";
+}
+
+@font-face{
+    src: url(font/Titillium_Web/TitilliumWeb-Regular.ttf);
+    font-family: "Titillium";
+}
+
+/*******Dount Header*******/
+header{
+    background-image: url("pic/dount-icon.png");
+    background-size: 51px;
+    height: 100px;
+    background-color:rgb(250, 255, 219);
+    overflow: hidden;
+}
+
+/*********Navigation Bar*********/
+.top-nav{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 500;
+    background-image: linear-gradient(rgba(255, 157, 211, 0.9),rgba(255, 202, 230, 0.9));
+    box-shadow: rgba(0, 0, 0, 0.3);
+}
+
+.top-nav li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.top-nav a{
+    display: block;
+    text-decoration: none;
+    color: rgb(202, 74, 144);
+    padding: 20px;
+    font-size: 18px;
+}
+
+.top-nav a:hover{
+    background-image: linear-gradient(rgba(255, 119, 194, 0.9),rgba(255, 158, 210, 0.9));
+    color: white;
+}
+
+/**********Text box and Image**************/
+.img-container{
+    position: relative;
+}
+
+.text-box{
+    position: absolute;
+    text-align: center;
+    background-color: rgb(255, 215, 237);
+    padding: 20px;
+    border-radius: 5px;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
