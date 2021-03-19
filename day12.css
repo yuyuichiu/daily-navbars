@@ -20,9 +20,10 @@ header{
 }
 
 /*********Navigation Bar*********/
-.top-nav{
+.nav{
     position: -webkit-sticky;
     position: sticky;
+
     top: 0;
     width: 100%;
     z-index: 500;
@@ -30,12 +31,12 @@ header{
     box-shadow: rgba(0, 0, 0, 0.3);
 }
 
-.top-nav li{
+.nav li{
     list-style-type: none;
     display: inline-block;
 }
 
-.top-nav a{
+.nav a{
     display: block;
     text-decoration: none;
     color: rgb(202, 74, 144);
@@ -43,9 +44,58 @@ header{
     font-size: 18px;
 }
 
-.top-nav a:hover{
+.nav a:hover{
     background-image: linear-gradient(rgba(255, 119, 194, 0.9),rgba(255, 158, 210, 0.9));
     color: white;
+}
+
+/*dropdown in navigation bar*/
+.nav-dropdown{
+    position: relative;
+}
+
+.nav-drop-item{
+    position: absolute;
+}
+
+.nav-drop-item a{
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    background-color: rgba(255, 167, 214, 0.9);
+    min-width: 150px;
+}
+
+.nav-dropdown:hover .nav-drop-item a{
+    height: auto;
+    opacity: 1;
+    transition: height 0s, opacity 0.2s linear, background-color 0.2s linear, color 0.1s linear;
+}
+
+.nav-dropdown:hover .nav-drop-item{
+    box-shadow: 0px 5px 10px rgba(68, 0, 37, 0.2);
+    transition: box-shadow 0.2s linear;
+}
+
+.nav-drop-item a:hover{
+    background-color: rgba(255, 140, 201, 0.9);
+}
+
+/*******Bottom Navigation - inherited from .nav*******/
+.bot-nav{
+    bottom: 0;
+    display: -webkit-sticky;
+    display: sticky;
+    background-image: linear-gradient(rgba(253, 169, 217, 0.9),rgba(255, 184, 222, 0.9));
+}
+
+.bot-nav{
+    box-shadow: 0px -0.5px 10px rgba(68, 0, 37, 0.2);
+}
+
+.bot-nav a{
+    padding: 10px;
+    font-size: 14px;
 }
 
 /**********Text box and Image**************/
@@ -57,9 +107,17 @@ header{
     position: absolute;
     text-align: center;
     background-color: rgb(255, 215, 237);
+    color: rgb(179, 30, 112);
     padding: 20px;
     border-radius: 5px;
     top: 20%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+
+.text-box2{
+    top: calc(25% + 120px);
+    min-width: 70%;
+    background-color: rgb(255, 203, 231);
+    padding: 10px;
 }
