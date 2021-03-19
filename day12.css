@@ -56,12 +56,14 @@ header{
 
 .nav-drop-item{
     position: absolute;
+    height: 0px;
+    overflow: hidden;
 }
 
 .nav-drop-item a{
-    height: 0;
+    height: 0px;
     opacity: 0;
-    overflow: hidden;
+
     background-color: rgba(255, 167, 214, 0.9);
     min-width: 150px;
 }
@@ -73,6 +75,7 @@ header{
 }
 
 .nav-dropdown:hover .nav-drop-item{
+    height: auto;
     box-shadow: 0px 5px 10px rgba(68, 0, 37, 0.2);
     transition: box-shadow 0.2s linear;
 }
@@ -84,12 +87,10 @@ header{
 /*******Bottom Navigation - inherited from .nav*******/
 .bot-nav{
     bottom: 0;
+    overflow: hidden;
     display: -webkit-sticky;
     display: sticky;
     background-image: linear-gradient(rgba(253, 169, 217, 0.9),rgba(255, 184, 222, 0.9));
-}
-
-.bot-nav{
     box-shadow: 0px -0.5px 10px rgba(68, 0, 37, 0.2);
 }
 
@@ -110,13 +111,13 @@ header{
     color: rgb(179, 30, 112);
     padding: 20px;
     border-radius: 5px;
-    top: 20%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
 
 .text-box2{
-    top: calc(25% + 120px);
+    top: calc(15% + 220px);
     min-width: 70%;
     background-color: rgb(255, 203, 231);
     padding: 10px;
