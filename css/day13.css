@@ -1,0 +1,53 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Titillium";
+}
+
+@font-face{
+    src: url(../../font/Titillium_Web/TitilliumWeb-Regular.ttf);
+    font-family: "Titillium";
+}
+
+/*********Navigation Bar*********/
+.nav{
+    position: -webkit-sticky;
+    position: sticky;
+
+    top: 0;
+    width: 100%;
+    z-index: 500;
+    background-image: linear-gradient(rgba(255, 226, 163, 0.9),rgba(255, 167, 155, 0.9));
+    box-shadow: rgba(0, 0, 0, 0.3);
+}
+
+.nav li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.nav a{
+    display: block;
+    text-decoration: none;
+    color: rgb(187, 0, 0);
+    padding: 20px;
+    font-size: 18px;
+}
+
+.nav a:hover, .active{
+    background-image: linear-gradient(rgba(255, 209, 110, 0.9),rgba(255, 137, 122, 0.9));
+    color: white;
+}
+
+/*Rows*/
+.row{
+    /*Margin between rows*/
+    margin-bottom: 15px;
+}
+
+.row > div{
+    border: 1px solid black;
+    background-color: rgb(183, 231, 233);
+    
+}
