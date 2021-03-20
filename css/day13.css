@@ -2,11 +2,11 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: "Titillium";
+    font-family: "Titillium", Georgia;
 }
 
 @font-face{
-    src: url(../../font/Titillium_Web/TitilliumWeb-Regular.ttf);
+    src: url(../font/Titillium_Web/TitilliumWeb-Regular.ttf);
     font-family: "Titillium";
 }
 
