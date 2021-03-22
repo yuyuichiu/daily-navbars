@@ -1,0 +1,96 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Titillium", "Georgia", sans-serif;
+}
+
+@font-face{
+    src:url(../font/Titillium_Web/TitilliumWeb-Regular.ttf);
+    font-family: "Titillium";
+}
+
+@font-face{
+    src:url(../font/Titillium_Web/TitilliumWeb-SemiBold.ttf);
+    font-family: "Titillium";
+    font-weight: 600;
+}
+
+@media (min-width:575px){
+    .nav{
+        height: 100vh;
+    }
+
+    .col-sm-3{
+        padding-right: 20px;
+    }
+
+    .col-sm-9{
+        padding-top: 60px;
+    }
+}
+
+@media (max-width: 574px){
+    .col-sm-3{
+        padding-right: 0px;
+    }
+}
+
+.navbar{
+    background-image: linear-gradient(rgba(236, 255, 185, 0.9),rgba(226, 255, 147, 0.9));
+    box-shadow: 0px 2px 10px rgba(64, 201, 0, 0.2);
+    z-index: 500;
+}
+
+.navbar-brand{
+    color: rgb(55, 216, 40);
+    cursor: pointer;
+}
+
+.nav-link{
+    color: rgb(25, 182, 11);
+    transition: all 0.2s linear;
+}
+
+.navbar-brand:hover{
+    color: rgb(20, 240, 0);
+}
+
+.nav-link:hover{
+    color: rgb(20, 240, 0);
+    border-radius: 5px;
+    background-color: rgba(219, 255, 118, 0.9);
+}
+
+/***Side Nav Menu***/
+.col-sm-3{
+    position: relative;
+    width: 100%;
+    padding-left: 0px;
+}
+
+.nav{
+    padding-top: 70px;
+    background-color: rgba(241, 255, 181, 0.9);
+    box-shadow: 2px 0px 10px rgba(64, 201, 0, 0.2);
+}
+
+.nav-item{
+   /*To extend the width of <a> to 100% of the bar*/
+   width: 100%;
+}
+
+.nav-item h4{
+    padding-left: 5px;
+    color: rgb(38, 224, 21);
+    font-weight: 600;
+}
+
+.col-sm-3 a{
+    padding: 2px 0px 2px 5px;
+}
+
+/****Main Content****/
+.col-sm-9{
+    padding-left: 0px;
+}
