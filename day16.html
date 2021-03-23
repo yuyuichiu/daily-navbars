@@ -25,9 +25,34 @@
     <div class="container-fluid">
         <h1>Javascript Study</h1>
         <hr>
-        <h3>Find the nearest 1st January that is a Sunday since now.</h3>
+
+        <!--Section 1-->
+        <h3>Find the nearest 1st January that is a Sunday from 2020 to 2100.</h3>
         <p>Loop through date, detect weekdays and specific day</p>
         <button onclick="nearestSun()">Start Finding</button>
+        <hr>
+
+        <!--Section 2-->
+        <h3>Calculate based on input</h3>
+        <!--Number Inputs-->
+        <form>
+            <label for="num1">Number 1:</label>
+            <input type="number" id="num1" placeholder="Num 1"/><br>
+            <label for="num2">Number 2:</label>
+            <input type="number" id="num2" placeholder="Num 2"/><br>
+        </form>
+        <!--Buttons-->
+        <button onclick="multiply()">Multiply</button>
+        <button onclick="divide()">Divide</button>
+        <!--Output Zone-->
+        <div id="output1" class="output">Output Zone</div>
+        <hr>
+
+        <!--Section 3-->
+        <h3>Output link of this website</h3>
+        <button onclick="urlGen()">Get URL</button>
+        <div id="output2" class="output">Output Zone</div>
+
     </div>
 
     <!--Scripts-->

@@ -44,3 +44,10 @@
     padding-left: 0px;
     margin-left: 30px;
 }
+
+/*Output bar*/
+.output{
+    margin: 5px;
+    border: 1px solid black;
+    height: auto;
+}
