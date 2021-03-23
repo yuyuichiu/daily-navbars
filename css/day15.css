@@ -81,13 +81,13 @@
 }
 
 .nav-item h4{
-    padding-left: 5px;
+    padding-left: 10px;
     color: rgb(38, 224, 21);
     font-weight: 600;
 }
 
 .col-sm-3 a{
-    padding: 2px 0px 2px 5px;
+    padding: 5px 0px 5px 15px;
 }
 
 /****Main Content****/

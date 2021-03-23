@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Titillium", "Georgia";
+}
+
+@font-face{
+    src:url(../font/Titillium_Web/TitilliumWeb-Regular.ttf);
+    font-family: "Titillium";
+}
+
+@font-face{
+    src:url(../font/Titillium_Web/TitilliumWeb-SemiBold.ttf);
+    font-family: "Titillium";
+    font-weight: 600;
+}
+
+/*Day 16 header*/
+.head h1{
+    margin-left: 30px;
+}
+
+.head:hover{
+    text-decoration: none;
+}
+
+/*Top Navigation Bar*/
+.navbar{
+    background-image: linear-gradient(rgba(245, 198, 255, 0.9),rgba(243, 188, 255, 0.9));
+    border-radius: 20px;
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+    margin: 2px 10px 10px 10px;
+}
+
+.nav-link:hover{
+    background-color: rgba(236, 149, 255, 0.9);
+    color: white;
+    border-radius: 5px;
+}
+
+/*Side Navigation Menu*/
+.container-fluid{
+    padding-left: 0px;
+    margin-left: 30px;
+}
