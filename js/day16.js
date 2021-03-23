@@ -19,7 +19,7 @@ function multiply(){
     var num1 = document.getElementById("num1").value;
     var num2 = document.getElementById("num2").value;
 
-    output.innerHTML = num1 * num2;
+    output1.innerHTML = num1 * num2;
 }
 
 function divide(){
