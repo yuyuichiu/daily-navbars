@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Titillium", "Georgia", sans-serif;
+}
+
+@font-face{
+    src:url(../font/Titillium_Web/TitilliumWeb-Regular.ttf);
+    font-family: "Titillium";
+}
+
+@font-face{
+    src:url(../font/Titillium_Web/TitilliumWeb-SemiBold.ttf);
+    font-family: "Titillium";
+    font-weight: 600;
+}
+
+/*Navigation Bar*/
+.top-nav ul{
+    width: 100%;
+    overflow: hidden;
+    background-image: linear-gradient(rgba(255, 253, 126, 0.9),rgba(255, 215, 35, 0.9));
+}
+
+.top-nav li{
+    float: left;
+}
+
+.top-nav a{
+    display: block;
+    text-decoration: none;
+    color:crimson;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 16px 20px;
+}
+
+.top-nav a:hover{
+    background-image: linear-gradient(rgba(255, 252, 59, 0.9),rgba(255, 212, 20, 0.9));
+}
+
+/*Main Content*/
+input{
+    margin-bottom: 5px;
+}
+
+.output{
+    border: 1px solid black;
+    border-radius: 3px;
+    padding-left: 5px;
+}
