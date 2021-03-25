@@ -1,0 +1,73 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Titillium", "Georgia", sans-serif;
+}
+
+@font-face{
+    src:url(../font/Titillium_Web/TitilliumWeb-Regular.ttf);
+    font-family: "Titillium";
+}
+
+@font-face{
+    src:url(../font/Titillium_Web/TitilliumWeb-SemiBold.ttf);
+    font-family: "Titillium";
+    font-weight: 600;
+}
+
+/****Navigation Bar****/
+.top-nav{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(177, 202, 255);
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
+    z-index: 500;
+}
+
+.top-nav a{
+    display: block;
+    padding: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(0, 83, 51);
+}
+
+.nav-vis{
+    background-color: rgb(157, 185, 247);
+}
+
+.nav-icon{
+    padding: 0px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.nav-icon:hover{
+    background-color: rgb(139, 173, 245);
+}
+
+#nav-links{
+    visibility: hidden;
+    overflow: hidden;
+    height: 0;
+
+    transition: height 1s linear;
+}
+
+#nav-links a:hover{
+    background-color: rgb(159, 189, 255);
+}
+
+/*Main Contents*/
+h1, p{
+    margin-left: 15px;
+}
+
+hr{
+    width: 90%;
+    margin: 10px 20px 10px 20px;
+}
