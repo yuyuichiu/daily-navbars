@@ -21,7 +21,6 @@ function removeStr(){
     
     var part1 = input2.substring(0, pos);
     var part2 = input2.substring(pos + removeLen);
-    console.log(part2);
 
     output2.innerText = part1 + part2;
 }
