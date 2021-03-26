@@ -1,0 +1,91 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Titillium", "Arial" ,san-serif;
+}
+
+@font-face{
+    src: url("../font/Titillium_Web/TitilliumWeb-Regular.ttf");
+    font-family: "Titillium";
+}
+
+@font-face{
+    src: url("../font/Titillium_Web/TitilliumWeb-SemiBold.ttf");
+    font-family: "Titillium";
+    font-weight: 600;
+}
+
+/************Overlay Menu Properties********/
+.overlay{
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 0;
+    overflow: hidden; /*To hide content when not activated*/
+    background-color: rgba(0,0,0,0.5);
+    z-index: 500;
+
+    transition: all 0.3s linear;
+}
+
+.overlay a{
+    text-decoration: none;
+    color: #ddd;
+    font-size: 30px;
+    display: block;
+    transition: all 0.2s linear;
+}
+
+.overlay a:hover{
+    color: white;
+    background-color: rgba(70, 70, 70, 0.5)
+}
+
+
+.overlay-links /*Container of links*/{
+    position: relative; /*For relative positioning of links*/
+    top: 20%; /*Links start displaying from top 25%*/
+    text-align: center;
+    white-space: nowrap;
+    padding-top: 10px;
+}
+
+.overlay .closeBtn{
+    position: absolute;
+    top: 40px;
+    left: 75%;
+    width: 50px;
+    text-align: center;
+    font-size: 45px;
+    padding: 0px;
+}
+
+/********Navbar************/
+.navbar{
+    position: relative;
+    background-image: linear-gradient(rgba(255,255,255, 0.8),rgba(200,200,200, 0.8));
+}
+
+.navbar a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 13px;
+    padding-left: 55px;
+    font-weight: 600;
+}
+
+.navmenu-icon{
+    position: absolute;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 34px;
+    cursor: pointer;
+}
+
+.navmenu-icon:hover{
+    background-image: linear-gradient(#aaa,#666);
+    color: white;
+}
