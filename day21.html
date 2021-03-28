@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 21</title>
+
+    <link rel="stylesheet" type="text/css" href="css/day21.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="js/day21.js" async></script>
+</head>
+<body onload="goAway()">
+    <!--Loading Screen-->
+    <div id="loadScreen">
+        <h1>Loading...</h1>
+    </div>
+
+    <!--Overlay Menu-->
+    <div class="overlay" id="overlay-menu">
+        <!--Close Button-->
+        <a href="javascript:void(0)" onclick="closeOverlay()" id="closeBtn">X</a>
+        <!--Items-->
+        <div class="overlay-links">
+            <a href="#">Test Link</a>
+            <a href="#">Test Link</a>
+            <a href="#">Test Link</a>
+            <a href="#">Test Link</a>
+        </div>
+    </div>
+
+    <!--Nav Bar-->
+    <nav class="nav">
+        <ul>
+            <li><a class="navicon" href="#" onclick="openOverlay()">&#9776;</a></li>
+            <li><a href="#">Day 21</a></li>
+        </ul>
+    </nav>
+    <div class="gap"></div>
+
+    <!--Main Content - Card Components-->
+    <div class="description">
+        <h1>Day 21: A flip card gallery. (responsive layout)</h1>
+        <h2>Try to hover these images to see the effects!</h2>
+        <p>Additional things: load screen, overlay menu revision</p>
+    </div>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="flip-card col-sm-6 col-lg-4">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="pic/hk1.jpg" alt="Avatar" height=300px width=100%>
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Hong Kong</h1>
+                        <p></p>
+                        <p>Crowed street, fast-paced lifestyle.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card col-sm-6 col-lg-4">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="pic/hk2.jpg" alt="Avatar" height=300px width=100%>
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Hong Kong</h1>
+                        <p></p>
+                        <p>Tail buildings and fancy lights</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card col-sm-6 col-lg-4">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="pic/hk3.jpg" alt="Avatar" height=300px width=100%>
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Dim Sum</h1>
+                        <p></p>
+                        <p>Traditional Chinese food.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card col-sm-6 col-lg-4">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="pic/hk4.jpg" alt="Avatar" height=300px width=100%>
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Lion Dance</h1>
+                        <p></p>
+                        <p>New Year Activities</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card col-sm-6 col-lg-4">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="pic/hk5.jpg" alt="Avatar" height=300px width=100%>
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Mountain View</h1>
+                        <p></p>
+                        <p>Amazing view from the top</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
