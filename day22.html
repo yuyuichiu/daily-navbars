@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 22</title>
+
+    <link rel="stylesheet" type="text/css" href="css/day22.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="js/day22.js" async></script>
+</head>
+<body onload="goAway()">
+    <!--Loading Screen-->
+    <div id="loadScreen">
+        <h1>Loading...</h1>
+    </div>
+
+    <!--Overlay Menu-->
+    <div class="overlay" id="overlay-menu">
+        <!--Close Button-->
+        <a href="javascript:void(0)" onclick="closeOverlay()" id="closeBtn">X</a>
+        <!--Items-->
+        <div class="overlay-links">
+            <a href="#">Test Link</a>
+            <a href="#">Test Link</a>
+            <a href="#">Test Link</a>
+            <a href="#">Test Link</a>
+        </div>
+    </div>
+
+    <!--Nav Bar-->
+    <nav class="nav">
+        <ul>
+            <li><a class="navicon" href="#" onclick="openOverlay()">&#9776;</a></li>
+            <li><a href="#">Day 22</a></li>
+            <li><a href="#" onclick="openTab('tab3','Javascript')">Javascript</a></li>
+            <li><a href="#" onclick="openTab('tab2','HTML')">HTML</a></li>
+        </ul>
+    </nav>
+    <div class="gap"></div>
+
+    <!--Content Segments-->
+    <h2>Tab to segment webpage content</h2>
+    <div class="tab">
+        <button id="tab1" class="tablinks active" onclick="openTab('tab1', 'Home')">Home</button>
+        <button id="tab3" class="tablinks" onclick="openTab('tab3', 'Javascript')">Javascript</button>
+        <button id="tab2" class="tablinks" onclick="openTab('tab2', 'HTML')">HTML</button>
+    </div>
+    
+    <div id="Home" class="tabcontents">
+        <h3>Home</h3>
+        <p>Click on the tabs above to navigate to contents</p>
+        <hr>
+        <p>Javascript - Coded some functions for studies</p>
+        <p>HTML - Description of tabs</p> 
+    </div>
+
+    <div id="HTML" class="tabcontents">
+        <h3>Tabs in webpages</h3>
+        <p>Learned how to make tabs to store various content into a content box</p>
+        <p>The contents are seperated by div, which their display attribute is altered by an onclick javascript event</p>
+    </div>
+      
+    <div id="Javascript" class="tabcontents">
+        <h3>Add white space between camelCasing</h2>
+        <p>camelCasing refers to string starts with lowercase, and uppercase for the remaining words, like myVariableCase</p>
+        <p>Technique: regex and replace</p>
+        <input type="text" class="input" id="input1" placeholder="inputHere"/>
+        <button onclick="camelSpace()" class="Btn">Execute</button>
+        <div class="output" id="output1"></div>
+        <hr>
+
+        <h3>Decimal to Binary</h3>
+        <p>Convert number to its binary form! (like 5 => 101)</p>
+        <input type="text" class="input" id="input2" placeholder="Decimal Number"/>
+        <button onclick="binary()" class="Btn">Execute</button>
+        <div class="output" id="output2"></div>
+    </div>
+</body>
+</html>
