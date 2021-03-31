@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample</title>
+
+    <link rel="stylesheet" type="text/css" href="css/day23.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="js/day23.js" async></script>
+</head>
+<body onload="goAway()">
+    <!--Loading Screen-->
+    <div id="loadScreen">
+        <h1>Loading...</h1>
+    </div>
+
+    <!--Overlay Menu-->
+    <div class="overlay" id="overlay-menu">
+        <!--Close Button-->
+        <a href="javascript:void(0)" onclick="closeOverlay()" id="closeBtn">X</a>
+        <!--Items-->
+        <div class="overlay-links">
+            <a href="#">Test Link</a>
+            <a href="#">Test Link</a>
+            <a href="#">Test Link</a>
+            <a href="#">Test Link</a>
+        </div>
+    </div>
+
+    <!--Nav Bar-->
+    <nav class="nav">
+        <ul>
+            <li><a class="navicon" href="#" onclick="openOverlay()">&#9776;</a></li>
+            <li><a href="#">Sample</a></li>
+        </ul>
+    </nav>
+    <div class="gap"></div>
+
+    <!--Tabs-->
+    <div class="tab">
+        <button onclick="switchTabs('Javascript','jsTab')" class="tablinks active" id="jsTab">Javascript</button><!--
+     --><button onclick="switchTabs('Html','htmlTab')" class="tablinks" id="htmlTab">HTML</button>
+    </div>
+
+    <!--Tab Contents-->
+    <div class="tabcontents" id="Javascript">
+        <h3>Dice Game</h3>
+        <p>Roll five dice and see how much score you get!</p>
+        <p>Rules are as follow: </p>
+        <ul class="diceRules">
+            <li>Three 1: 1000pt</li>
+            <li>Three 2: 200pt</li>
+            <li>Three 3: 300pt</li>
+            <li>Three 4: 400pt</li>
+            <li>Three 5: 500pt</li>
+            <li>Three 6: 600pt</li>
+            <li>Single 1: 100pt</li>
+            <li>Single 5: 50pt</li>
+            <li>Each dice can only be counted in one roll, and each roll can be only triggered once</li>
+        </ul>
+        <button onclick="randDice()" class="Btn">Roll Dice</button>
+        <button onclick="clearOutput()" class="Btn">Clear Output</button>
+        <div class="output" id="diceOutput"></div>
+    </div>
+
+    <div class="tabcontents" id="Html">
+        <h3>HTML title</h3>
+        <p>revised how to make tabs</p>
+        <p>The dice game will be improved in later days, such as adding playability, complexer rules and graphics</p>
+    </div>
+</body>
+</html>

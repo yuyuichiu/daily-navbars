@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", "Arial", sans-serif;
+}
+
+@font-face{
+    src: url("../font/Raleway/Raleway-VariableFont_wght.ttf");
+    font-family: "Raleway";
+}
+
+@font-face{
+    src: url("../font/Train_One/TrainOne-Regular.ttf");
+    font-family: "TrainOne";
+}
+
+/**Loading Screen**/
+#loadScreen{
+    z-index: 9999999999999;
+    position: fixed;
+    display: block;
+    background-color: rgb(207, 207, 207);
+    height: 100%;
+    width: 100%;
+}
+
+#loadScreen h1{
+    font-size: 3em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/***Nav Bar***/
+.nav ul{
+    position: fixed;
+    background-color: #ddd;
+    width: 100%;
+    z-index: 999;
+}
+
+.nav li{
+    float: left;
+    list-style-type: none;
+}
+
+.nav a{
+    color: black;
+    display: block;
+    padding: 15px;
+    font-size: 20px;
+    transition: all 0.1s linear;
+}
+
+.nav a:hover{
+    text-decoration: none;
+    background-color: rgb(78, 78, 78);
+    color: rgb(240, 255, 106);
+}
+
+a.navicon{
+    padding: 10px;
+    font-size: 27px;
+}
+
+/**Overlay**/
+.overlay{
+    position: absolute;
+    z-index: 10000;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+
+    transition: all 0.2s ease-in-out;
+}
+
+#closeBtn{
+    position: relative;
+    top: 60px;
+    left: 70%;
+
+    text-decoration: none;
+    padding: 20px;
+    font-size: 40px;
+    color: #eee;
+}
+
+.overlay-links a{
+    text-decoration: none;
+    position: relative;
+    top: 10vh;
+
+    white-space: nowrap;
+    display: block;
+    color: #eee;
+    padding: 20px;
+    text-align: center;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.overlay-links a:hover{
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0,0,0,0.4);
+}
+
+/**Gap for nav**/
+.gap{
+    height: 80px;
+}
+
+/*Text Settings*/
+.output{
+    border: 1px solid black;
+    margin: 2px 15px 2px 15px;
+    padding-left: 5px;
+    border-radius: 5px;
+    min-height: 26px;
+}
+
+h1, h2, p, .Btn{
+    margin-left: 15px;
+}
+
+.diceRules li{
+    margin-left: 30px;
+}
+
+h3{
+    margin: 0px 0px 0px 8px !important;
+}
+
+/* Tab link & Content Stylings */
+.tab{
+    background-color: #eee;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.tablinks{
+    background-color: inherit;
+    border: none;
+    outline: none;
+    padding: 10px;
+    transition: 0.3s all;
+}
+
+.tablinks:hover {
+    background-color: #555;
+    color: yellow;
+}
+
+.active{
+    background-color: #444;
+    color: yellow;
+}
+
+.tabcontents{
+    display: none;
+    border: 1px solid #bbb;
+    border-top: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 5px;
+    transition: all 0.3s;
+    min-height: 200px;
+}
+
+#Javascript{
+    display: block;
+}
+
+.tabcontents p{
+    margin-bottom: 3px;
+}
