@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 25</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/day25.css">
+    <script src="js/day25.js" async></script>
+</head>
+<body>
+    <nav>
+        <ul class="nav">
+            <li class="navfirst"><a href="#" >Day 25</a></li>
+            <li><a href="#" class="navitem">We</a></li>
+            <li><a href="#" class="navitem">Have</a></li>
+            <li><a href="#" class="navitem">Cool</a></li>
+            <li><a href="#" class="navitem">Hover</a></li>
+            <li><a href="#" class="navitem">Effects</a></li>
+        </ul>
+    </nav>
+    <div class="wordsbehindnav"><h1>To record valuable knowledge of web development</h1></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="mysidetab col-sm-2">
+                <p>This layout is a</p>
+                <p>CSS template</p>
+                <p>for later project</p>
+                <br>
+                <p>responsive layout included</p>
+            </div>
+            <div class="mymain col-sm-10">
+                <h2>Password verification with regex</h2>
+                <p>Regex can be useful in detecting pattern, and it can also see things out of order</p>
+                <p>In this case, a password needs to follow these rules</p>
+                <ul>
+                    <li>Must be eight characters long</li>
+                    <li>Contains an uppercase letter</li>
+                    <li>Contains a lowercase letter</li>
+                    <li>Contains number</li>
+                    <li>Accept only alphanumeric characters</li>
+                </ul>
+                <input type="text" id="pw" class="inputfield" placeholder="Password to test (input not hidden for readability)"/>
+                <button class="button" onclick="validate()">Validate</button>
+                <div class="output" id="pwOutput">Result</div>
+                <br>
+                <ul>
+                    <li>Look ahead <div class="code">/(?=)/</div> to see if match fulfills criteria given</li>
+                    <li>For example: <div class="code">/(?=.*[A-Z])[\w]/</div> returns an true/false assertion to the match found with \w</li>
+                    <li><div class="code">/[A-Za-z0-9]${8,}/</div> to test length and alphanumeric</li>
+                    <br>
+                    <li>Thus, <div class="code">/(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])[A-Za-z0-9]{8,}/</div> will do the trick.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

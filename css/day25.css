@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "OpenSans", sans-serif;
+}
+
+body{
+    background-color: #eee;
+}
+
+/* Font for title - PermanentMarker*/
+@font-face{
+    src: url("../font/Permanent_Marker/PermanentMarker-Regular.ttf");
+    font-family: "PermanentMarker";
+}
+/* Font for contents - Open Sans*/
+@font-face{
+    src: url("../font/Open_Sans/OpenSans-Regular.ttf");
+    font-family: "OpenSans";
+}
+
+/* Navigation Bar */
+.nav{
+    position: fixed;
+    max-height: 65px;
+    width: 100%;
+    overflow: hidden;
+    /* 207, 88 || */
+    background-image: linear-gradient(rgba(196, 196, 196, 0.9),rgba(71, 71, 71, 0.9));
+    z-index: 5000;
+}
+
+.nav li{
+    float: left;
+    list-style-type: none;
+}
+
+.nav a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 18px;
+
+    transition: all 0.3s;
+    transform: translate(0px,0px);
+    color: #ddd
+}
+
+.nav a:hover{
+    transform: scale(1.2);
+    text-decoration: overline underline;
+    text-underline-offset: 4px;
+    color: #fff;
+}
+
+/* Nav bar Title */
+.navfirst a{
+    font-family: "PermanentMarker";
+    color: rgba(255, 252, 49, 0.9);
+    transform: scale(1.3);
+}
+
+.navfirst a:hover{
+    text-decoration: none;
+    color: rgba(255, 252, 49, 0.9);
+    text-shadow: 0px 0px 5px rgba(238, 255, 0, 0.3);
+    transform: scale(1.4);
+}
+
+/* Offset for nav bar items */
+.navitem{
+    position: relative;
+    left: 75px;
+}
+
+/* Words behind the nav bar */
+.wordsbehindnav{
+    position: relative;
+    height: 65px;
+    max-height: 65px;
+    background-color: white;
+}
+
+.wordsbehindnav h1{
+    position: relative;
+    transform: translate(-10px,27px);
+    text-align: right;
+    font-style: italic;
+    color: #555;
+    opacity: 90%;
+    white-space: nowrap;
+    font-size: 25px;
+}
+
+.mysidetab{
+    display: none;
+    background-color: rgb(216, 216, 216);
+    height: 100vh;
+}
+
+@media (max-width: 575px){
+    .mysidetab{
+        display: none;
+    }
+}
+
+@media (min-width: 576px){
+    .mysidetab{
+        display: block;
+    }
+}
+
+.mymain{
+    display: inline-block;
+    background-color: #fff;
+    height: 100vh;
+    padding-top: 5px;
+}
+
+.code{
+    display: inline-block;
+    width: auto;
+    background-color: #eee;
+    padding: 0px 5px 0px 5px;
+    border-radius: 2px;
+}
+
+/* Specifics */
+.mymain li{
+    margin: 2px 0px 2px 20px;
+}
+
+.inputfield{
+    width: 100%;
+}
+
+.output{
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid black;
+    min-height: 26px;
+}
+
+.button{
+    margin: 3px;
+    margin-left: 0px;
+}
