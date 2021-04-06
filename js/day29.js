@@ -27,5 +27,6 @@ function gcd(){
 
 function show(){
     document.getElementById("hiddentxt").style.visibility = "visible";
+    document.getElementById("hiddentxt").style.height = "auto";
     document.getElementById("hiddentxt").style.opacity = 1;
 }
