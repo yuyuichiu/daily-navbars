@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 30</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/day30.css">
+    <script src="js/day30.js" async></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="pic/favicon_package_v0.16/favicon.ico">
+</head>
+<body>
+    <nav class="sidenav">
+        <ul class="sidenav-top">
+            <!--Each list item represents a link-->
+            <li>
+                <a class="sidenav-link" href="#">
+                    <div class="sidenav-item">
+                        <img width=45px class="sidenav-icon mainicon" src="pic/testicon.png"/>
+                        <div class="sidenav-text">MaxWebLib</div>
+                    </div>
+                </a>
+                <div class="sidenav-gapL">
+            </li>
+            <!-- Navigation Icons-->
+            <li>
+                <a class="sidenav-link" href="#">
+                    <div class="sidenav-item">
+                        <img width=45px class="sidenav-icon mainicon" src="pic/testicon2.png"/>
+                        <div class="sidenav-text">Test</div>
+                    </div>
+                </a>
+                <div class="sidenav-gap"></div>
+            </li>
+
+            <li>
+                <a class="sidenav-link" href="#">
+                    <div class="sidenav-item">
+                        <img width=45px class="sidenav-icon mainicon" src="pic/testicon2.png"/>
+                        <div class="sidenav-text">Test</div>
+                    </div>
+                </a>
+                <div class="sidenav-gap"></div>
+            </li>
+
+            <li>
+                <a class="sidenav-link" href="#">
+                    <div class="sidenav-item">
+                        <img width=45px class="sidenav-icon mainicon" src="pic/testicon2.png"/>
+                        <div class="sidenav-text">Test</div>
+                    </div>
+                </a>
+                <div class="sidenav-gap"></div>
+            </li>
+        </ul>
+    </nav>
+    <nav>
+        <ul class="nav">
+            <li class="navfirst"><a href="#" >Day 30</a></li>
+            <li><a href="#" class="navitem">We</a></li>
+            <li><a href="#" class="navitem">Have</a></li>
+            <li><a href="#" class="navitem">Cool</a></li>
+            <li><a href="#" class="navitem">Hover</a></li>
+            <li><a href="#" class="navitem">Effects</a></li>
+        </ul>
+    </nav>
+    <div class="wordsbehindnav"><h1>To record valuable knowledge of web development</h1></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="mymain col-sm-11">
+                <article>
+                    <h2>Class in javascript</h2>
+                    <p><u>Components : Constructor, Get Method and Method</u></p>
+                    <p>Constructor - run on initialization of Object, usually used for declaring class variables</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;constructor(var1){ this.var1 = var1 }</p>
+                    <p>Method: getter method & class method</p>
+                    <p>get func(){ ... } => called by "class.func"</p>
+                    <p>func(){ ... } => called by "class.func()"</p>
+                </article>
+                <hr>
+                <article id="spawnParent">
+                    <h2>Adding HTML object through javascript</h2><br>
+                    <h3>Create the object</h3>
+                    <p>var newTag = document.<b>createElement("")</b>;</p>
+                    <p>var newContent = document.<b>createTextNote("Content to be inside")</b>;</p>
+                    <br>
+                    <h3>Glue them together</h3>
+                    <p>newTag.<b>appendChild(newContent)</b>;</p>
+                    <br>
+                    <h3>Locate the parent & Insert</h3>
+                    <p>parent = getElementById("parentdiv")</p>
+                    <p>parent.<b>insertBefore(newTag, position)</b></p>
+                    <p>Note: "position.nextSibling" if need to insert After (there is no insertAfter() method.)</p>
+                    <br>
+                    <h3 id="generator" onclick="spawn()">Click me to generate text!</h3>
+                </article>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
